@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<title>IDとパスワード</title>
+</head>
+<body>
+  	<h1>IDとパスワード</h1>
+  	<hr>
+  
+  	<form action="/touroku_app" method="POST">
+  		ID: <input type="text" name="id">
+  		パスワード: <input type="password" name="pwd">
+  		
+</form>
+<head>
+	<meta charset="utf-8">
+	<title>ラジオボタン</title>
+</head>
+<body>
+	<h1>radio buttons</h1>
+	<hr>
+
+	<form action="/radio_app" method="POST">
+		神奈川<input type="radio" name="address" value="Kanagawa">
+		東京<input type="radio" name="address" value="Tokyo">
+		
+	</form>
+<head>
+	<meta charset="utf-8">
+	<title>セレクト</title>
+</head>
+<body>
+	<h1>セレクト</h1>
+	<hr>
+	
+	<form action="/select_app" method="POST">
+		<select name="favorite">
+			<option value="">好きなものを選んでください</option>
+			<option value="cat">ねこ</option>
+			<option value="dog">いぬ</option>
+			<option value="fried chicken">唐揚げ</option>
+			<option value="chicken wings">手羽先</option>
+			<option value="octopus wasabi">たこわさび</option>
+		</select>
+		
+	</form>
+<head>
+	<meta charset="utf-8">
+	<title>テキストエリア</title>
+</head>
+<body>
+	<h1>テキストエリア</h1>
+	<hr>
+	
+	<form action="/textarea_app" method="POST">
+		<textarea name="self" rows="5" cols="40">
+			自己紹介してください。
+		</textarea>
+		<input type="submit" value="OK">
+	</form>
+</body>
+</html>
